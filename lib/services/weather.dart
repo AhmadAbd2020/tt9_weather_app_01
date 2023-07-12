@@ -25,6 +25,7 @@ class WeatherModel {
 
   Future<void> getCitytLocationWeather({required cityName}) async {
     Location location = Location();
+    
     await location.getLocation();
 
     Map<String, dynamic> weatherInfo = await NetworkHelper(
